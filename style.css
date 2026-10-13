@@ -275,3 +275,64 @@ nav a:hover {
     .dashboard {
         grid-template-columns: 1fr;
     }
+/* My Skills input and buttons */
+#skillInput {
+    width: 65%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+#skillList {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#skillList li {
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e6f0;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+#skillList button,
+#skillInput + button {
+    padding: 10px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#skillInput + button {
+    background-color: #263b80;
+    color: white;
+}
+
+#skillList button {
+    background-color: #e8edf9;
+    color: #263b80;
+    margin-left: 8px;
+}
+
+#skillInput + button:hover {
+    background-color: #1b2c64;
+}
+
+#skillList button:hover {
+    background-color: #d5def5;
+}
+
+@media (max-width: 400px) {
+    #skillInput {
+        width: 100%;
+    }
+
+    #skillInput + button {
+        width: 100%;
+    }
